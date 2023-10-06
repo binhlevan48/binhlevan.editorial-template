@@ -2503,6 +2503,9 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		display: block;
+    		margin: 0 auto;
+    		text-align: center;
 	}
 
 		input[type="submit"]:hover,
