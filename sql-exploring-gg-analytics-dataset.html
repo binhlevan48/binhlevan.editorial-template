@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>SQL1 - Exploring Google Analytics Dataset</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/pre.css" />
+        
+        <!-- uses google-code-prettify for syntax highlighting 
+             see https://github.com/google/code-prettify/ for more info -->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    </head>
+
+    <body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+				
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Have a Great day</strong> by HTML5 UP</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+				
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Exporing Google Analytics Dataset</h1>
+									</header>
+				
+									<!-- <span class="image main"><img src="images/plato-pizza-dashboard.png" alt="" /></span> -->
+				
+									<h2>1. Dataset Summary</h2>
+                  <p>For each Analytics view that is enabled for BigQuery integration, a dataset is added using the view ID as the name.<br>
+                  For more information, please visit link: https://support.google.com/analytics/answer/3437719?hl=en
+                  </p>
+                  
+									
+									<hr class="major" />
+                  <h2>2. Objective</h2>
+                  <ul>
+                  <li><p>The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness</p>
+                  </li>
+                  <li><p>By analyzing the dataset, we aim to understand some key metrics, identify trends</p>
+                  <ul>
+                  <li>Total visit, pageview, transaction and revenue per month</li>
+                  <li>Bounce rate per traffic source</li>
+                  <li>Average amount of money spent per session</li>
+                  <li>Average number of product pageviews by purchaser type</li>
+                  <li>Cohort map from pageview to addtocart to purchase</li>
+                  </ul>
+                  </li>
+                  </ul>
+									
+									
+									<hr class="major" />
+                  <h2>3. Tool: SQL in Big Query</h2>
+									<hr class="major" />
+								
+									<h2>4. The brief</h2>
+									<ul>
+										<li>Tracking business performance</li>
+										<li>Compare product performance</li>
+										<li>Identify highest-grossing products and perform deeper product analysis</li>
+									</ul>
+									<hr class="major" />
+									<h2>5. Recommendations</h2>
+									<h3>a. Products</h3>
+									<p>∎ Pizza is a starchy dish <br> ➝ The menu should add other dishes, such as salads.</p>
+									<p>∎ The Brie Carre Pizza: $23.65 for S size, this price is relatively high <br> ➝ Consider adjusting the price or defining the unique selling points of this product (very delicious or using expensive ingredients), and then run a free-tasting promotion.</p>
+									<p>∎ The Greek Pizza is the only pizza that serves size XL và XXL, but sales is only well at XL size ($14,076/12 months), too low at XXL size ($1,007/12 months) <br> ➝ Consider removing XXL size and run the experiment by adding XL size with 5 pizzas: Thai Chicken, Barbecue Chicken, California Chicken, Spicy Italian, Southwest Chicken; these pizzas have the most sales at L size and then see how the results.</p>
+									<p>∎ To serve group or family customers <br> ➝ The restaurant can create combos with a combination of 2-3 types of pizza with an attractive price, such as Chicken L with Cheese L or Cheese L with Spicy L.</p>
+									<p>∎ Instead of ordering Big Meat S ($12) with other pizza <br> ➝ Let's invite customers to try pizzas of the S size in the Supreme category (Supreme's S price is only a bit higher, $12.25 to $12.5), but ingredients are more varied.</p>
+									<h3>b. Operations</h3>
+									<p>∎ During peak periods: <br> ➝ Encourage customers to book a table in advance by phone and list of pizza types they would like to eat; then, the kitchen can prepare before to serve quicker, save time and make it convenient to arrange the tables.</p>
+									<p>∎ About operating time: Instead of opening at 9AM, the restaurant can consider the following:<br>
+									+ Opening from 10AM onwards.<br>
+									+ Closing at 10PM on the first days of the week, especially mid to weekend, open late until 11PM
+									</p>
+									<p>∎ About the seats:<br> ➝ The restaurant can add tables with two chairs for guests who come alone or in groups of 2, ensuring privacy and space-saving seats; in case to serve a group of 4 people: we can pair two tables quickly</p>
+                							<p>Lecture | 1h30 | <a target="_blank" href="Tai_liu_hng_dn_ban_POD_tren_Etsy_chi.pdf">Slides</a></p>     
+				
+								</section>
+			
+									<ul class="actions">
+										<li><a href="generic2.html" class="button">Back To Top</a></li>
+									</ul>
+									
+				
+						</div>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+    </body>
+</html>
