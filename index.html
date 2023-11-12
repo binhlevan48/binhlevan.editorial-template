@@ -56,7 +56,7 @@
 										</header>
 										<p style="text-align: justify;">I find great motivation in the conviction that data can be leveraged to facilitate informed decision-making. My objective is to enhance accessibility and efficiency in code comprehension and data utilization for individuals.</p>
 										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
+											<li><a href="#" class="button big" onclick="scrollToSection()">Get in touch</a></li>
 										</ul>
 									</div>
 									<span class="image object">
@@ -248,7 +248,7 @@
 								</section>
 				
 							<!-- Get In Touch Section -->
-								<section>
+								<section id="get-in-touch">
 									<header class="major">
 										<h2>Get in touch</h2>
 									</header>
@@ -284,6 +284,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+	    		<script> function scrollToSection() { document.getElementById('get-in-touch').scrollIntoView({ behavior: 'smooth' }); } </script>
 
     </body>
 </html>
