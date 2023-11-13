@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>SQL3 - Pizza Sales (Part 1)</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/pre.css" />
+        
+        <!-- uses google-code-prettify for syntax highlighting 
+             see https://github.com/google/code-prettify/ for more info -->
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    </head>
+
+    <body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+				
+							<!-- Header -->
+								<header id="header">
+									<a href="sql.html" class="logo">
+										<strong>SQL Projects</strong>
+										<img src="images/back_to_homepage_icon.gif" alt="Icon" style="vertical-align: middle;">
+									</a>
+										
+<!-- 									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul> -->
+									<a href="#" class="logo" style="text-align: right;">
+										<img src="images/only_today.gif" alt="Icon" style="vertical-align: middle;">
+										<strong>Have a Great Day !</strong>
+									</a>
+                  
+								</header>
+				
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Pizza Sales (part 1)</h1>
+									</header>
+				
+									<!-- <span class="image main"><img src="images/plato-pizza-dashboard.png" alt="" /></span> -->
+				
+									<h2>1. Dataset Summary</h2>
+							    <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;"><br>
+							    More information, please visit link: <a href="https://support.google.com/analytics/answer/3437719?hl=en">here</a>
+							    </p>
+									
+									<hr class="major" />
+									
+							                <h2>2. Objective</h2>
+							                <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness. The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness. By analyzing the dataset, we aim to understand key metrics, identify trends, and make data-driven recommendations for improving website performance and optimizing digital marketing strategies.</p>
+
+									  <!-- 
+								          <ul>
+							                  <li>Total visit, pageview, transaction and revenue per month</li>
+							                  <li>Bounce rate per traffic source</li>
+							                  <li>Average amount of money spent per session</li>
+							                  <li>Average number of product pageviews by purchaser type</li>
+							                  <li>Cohort map from pageview to addtocart to purchase</li>
+							                  </ul>
+							                  </li>
+							                  </ul>
+									  -->
+									
+									<hr class="major" />
+								
+									<h2>3. List of Queries</h2>
+		
+									<p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">
+									1. Calculate total visit, pageview, transaction for Jan, Feb and March 2017 (order by month)<br>
+									2. Bounce rate per traffic source in July 2017 (Bounce_rate = num_bounce/total_visit) (order by total_visit DESC)<br>
+								   	3. Revenue by traffic source by week, by month in June 2017<br>
+									4. Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017<br>
+									5. Average number of transactions per user that made a purchase in July 2017<br>
+									6. Average amount of money spent per session. Only include purchaser data in July 2017<br>
+									7. Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered<br>
+									8. Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017. For example, 100% product view then 40% add_to_cart and 10% purchase.<br>
+									Add_to_cart_rate = number product  add to cart/number product view. Purchase_rate = number product purchase/number product view. The output should be calculated in product level.
+									</p>
+                							<!-- <p>Lecture | 1h30 | <a target="_blank" href="Tai_liu_hng_dn_ban_POD_tren_Etsy_chi.pdf">Slides</a></p> -->    
+									<ul class="actions">
+										<li><a href="https://github.com/binhlevan48/DATA_PROJECTS/blob/main/SQL/Bigquery_Project/Bigquery_project.sql" class="button">View Source Code</a></li>
+									</ul>
+								</section>
+									
+						</div>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+    </body>
+</html>
