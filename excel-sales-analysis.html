@@ -55,30 +55,61 @@
 									<!-- <span class="image main"><img src="images/plato-pizza-dashboard.png" alt="" /></span> -->
 				
 									<h2>1. Design Thinking</h2>
-								        <p style="font-size: 1.3em; text-align: justify; margin-left: 20px; margin-right: 20px;">Step 1: Empahthize</p><br>
+								        <p style="font-size: 1.3em; text-align: justify; margin-left: 20px; margin-right: 20px;">Step 1: Empahthize</p>
 									<p style="font-size: 1.1em; text-align: justify; margin-left: 20px; margin-right: 20px;">
 									1. Understand problem & Observe<br><br>
 									What problem is the stakeholder trying to address? What difficulties are they facing?<br>
 									- Analyzing and understanding the sales performance of the business.<br>
 									- Difficulties in extracting meaningful insights from the raw data due to its size and complexity.<br><br>
 									Why is it necessary to build this dashboard? What is the goal of this dashboard?<br>
-									- Provide a centralized and interactive platform for analyzing and monitoring sales performance<br>
-									- The goals of the dashboard include:<br>
+									- Provide a centralized and interactive platform for analyzing and monitoring sales performance<br><br>
+									What is the goal of this dashboard?<br>
+									The goals of the dashboard include:<br>
 									
-									Enhanced Data Visualization: The dashboard will present the sales data in an intuitive and visually appealing manner, making it easier for stakeholders to interpret and analyze the information.<br>
+									- Enhanced Data Visualization: The dashboard will present the sales data in an intuitive and visually appealing manner, making it easier for stakeholders to interpret and analyze the information.<br>
+										
+									- Real-time Monitoring: The dashboard will provide up-to-date sales data, allowing stakeholders to track sales performance in real-time and identify any deviations or anomalies that require attention.<br>
+										
+									- Key Performance Indicators (KPIs): The dashboard will highlight important KPIs such as total sales, average order size, top-selling products, customer segments, and geographic sales distribution. This will enable stakeholders to quickly assess the overall performance of the business and identify areas for improvement.<br>
+										
+									- Trend Analysis: The dashboard will include time series analysis and trend visualizations to identify seasonal patterns, growth trends, and any significant changes in sales over time. This will help stakeholders make informed decisions and adjust their strategies accordingly.<br>
+										
+									- Drill-down Capabilities: The dashboard will allow stakeholders to drill down into specific dimensions such as customer segments, product categories, or geographic regions to gain deeper insights and identify underlying factors influencing sales performance.<br><br>
 									
-									Real-time Monitoring: The dashboard will provide up-to-date sales data, allowing stakeholders to track sales performance in real-time and identify any deviations or anomalies that require attention.<br>
-									
-									Key Performance Indicators (KPIs): The dashboard will highlight important KPIs such as total sales, average order size, top-selling products, customer segments, and geographic sales distribution. This will enable stakeholders to quickly assess the overall performance of the business and identify areas for improvement.<br>
-									
-									Trend Analysis: The dashboard will include time series analysis and trend visualizations to identify seasonal patterns, growth trends, and any significant changes in sales over time. This will help stakeholders make informed decisions and adjust their strategies accordingly.<br>
-									
-									Drill-down Capabilities: The dashboard will allow stakeholders to drill down into specific dimensions such as customer segments, product categories, or geographic regions to gain deeper insights and identify underlying factors influencing sales performance.<br>
 									Who are the users of this report?<br>
-									Sales managers and executives within the organization. They are responsible for overseeing the sales performance, making strategic decisions, and driving revenue growth.<br>
+									- Sales managers and executives within the organization. They are responsible for overseeing the sales performance, making strategic decisions, and driving revenue growth.<br><br>
 
 
-									2. Calculating Recency score, Frequency score and Monetary score by using quartile base on row_number of each factor<br>
+									2. Dataset Review<br><br>
+									Dimensions:<br>
+
+									- Row ID: A unique identifier for each row in the dataset.<br>
+									- Order ID: A unique identifier for each order.<br>
+									- Order Date: The date when the order was placed.<br>
+									- Ship Date: The date when the order was shipped.<br>
+									- Ship Mode: The shipping mode used for the order.<br>
+									- Customer ID: A unique identifier for each customer.<br>
+									- Customer Name: The name of the customer.<br>
+									- Segment: The customer segment<br>
+									- Country: The country where the order was placed.<br>
+									- City: The city where the order was placed.<br>
+									- State: The state where the order was placed.<br>
+									- Postal Code: The postal code of the location where the order was placed.<br>
+									- Region: The region where the order was placed.<br>
+									- Product ID: A unique identifier for each product.<br>
+									- Category: The category of the product.<br>
+									- Sub-Category: The sub-category of the product.<br>
+									- Product Name: The name of the product.<br>
+									
+									Measures:<br>
+									
+									- Sales: The amount of sales generated by each order.<br>
+									- Quantity: The quantity of products ordered in each order.<br>
+									- Discount: The discount applied to each order.<br>
+									- Profit: The profit generated from each order.<br>
+
+
+									
 								        3. Synthesizing RFM score using concat() function
 									<br>
 								        More information, please visit link: <a href="https://drive.google.com/drive/folders/1Z0xe-N9ZCekbitV6mNvMyk56Fb-GbUka?usp=sharing">here</a>
