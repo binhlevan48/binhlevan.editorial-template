@@ -6,7 +6,7 @@
 -->
 <html>
     <head>
-        <title>Excel 1 - Super Store Sales Analysis</title>
+        <title>EXCEL 1 - Super Store Sales Analysis</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -49,51 +49,60 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Exploring Google Analytics Dataset</h1>
+										<h1>Super Store Sales Analysis</h1>
 									</header>
 				
 									<!-- <span class="image main"><img src="images/plato-pizza-dashboard.png" alt="" /></span> -->
 				
-									<h2>1. Dataset Summary</h2>
-							                <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">For each Analytics view that is enabled for BigQuery integration, a dataset is added using the view ID as the name.<br>
-							                More information, please visit link: <a href="https://support.google.com/analytics/answer/3437719?hl=en">here</a>
-							                </p>
+									<h2>1. Design Thinking</h2>
+								        <p style="font-size: 1.3em; text-align: justify; margin-left: 20px; margin-right: 20px;">Step 1: Empahthize</p><br><br>
+									<p style="font-size: 1.1em; text-align: justify; margin-left: 20px; margin-right: 20px;">
+									1. Understand problem & Observe<br>
+									What problem is the stakeholder trying to address? What difficulties are they facing?<br>
+									- Analyzing and understanding the sales performance of the business.<br>
+									- Difficulties in extracting meaningful insights from the raw data due to its size and complexity.<br>
+									Why is it necessary to build this dashboard? What is the goal of this dashboard?<br>
+									- Provide a centralized and interactive platform for analyzing and monitoring sales performance<br>
+									- The goals of the dashboard include:<br>
 									
-									<hr class="major" />
+									Enhanced Data Visualization: The dashboard will present the sales data in an intuitive and visually appealing manner, making it easier for stakeholders to interpret and analyze the information.<br>
 									
-							                <h2>2. Objective</h2>
-							                <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness. The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness. By analyzing the dataset, we aim to understand key metrics, identify trends, and make data-driven recommendations for improving website performance and optimizing digital marketing strategies.</p>
+									Real-time Monitoring: The dashboard will provide up-to-date sales data, allowing stakeholders to track sales performance in real-time and identify any deviations or anomalies that require attention.<br>
+									
+									Key Performance Indicators (KPIs): The dashboard will highlight important KPIs such as total sales, average order size, top-selling products, customer segments, and geographic sales distribution. This will enable stakeholders to quickly assess the overall performance of the business and identify areas for improvement.<br>
+									
+									Trend Analysis: The dashboard will include time series analysis and trend visualizations to identify seasonal patterns, growth trends, and any significant changes in sales over time. This will help stakeholders make informed decisions and adjust their strategies accordingly.<br>
+									
+									Drill-down Capabilities: The dashboard will allow stakeholders to drill down into specific dimensions such as customer segments, product categories, or geographic regions to gain deeper insights and identify underlying factors influencing sales performance.<br>
+									Who are the users of this report?<br>
+									Sales managers and executives within the organization. They are responsible for overseeing the sales performance, making strategic decisions, and driving revenue growth.<br>
 
-									  <!-- 
-								          <ul>
-							                  <li>Total visit, pageview, transaction and revenue per month</li>
-							                  <li>Bounce rate per traffic source</li>
-							                  <li>Average amount of money spent per session</li>
-							                  <li>Average number of product pageviews by purchaser type</li>
-							                  <li>Cohort map from pageview to addtocart to purchase</li>
-							                  </ul>
-							                  </li>
-							                  </ul>
-									  -->
+
+									2. Calculating Recency score, Frequency score and Monetary score by using quartile base on row_number of each factor<br>
+								        3. Synthesizing RFM score using concat() function
+									<br>
+								        More information, please visit link: <a href="https://drive.google.com/drive/folders/1Z0xe-N9ZCekbitV6mNvMyk56Fb-GbUka?usp=sharing">here</a>
+								        </p>
 									
 									<hr class="major" />
-								
-									<h2>3. List of Queries</h2>
+									
+								        <h2>2. Objective</h2>
+								        <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">The objective is to gain a deep understanding of customer behavior and segment customers based on their transactional characteristics. By applying the RFM analysis, we aim to identify high-value customers, understand their purchase patterns, and uncover opportunities for customer retention and revenue growth</p>
+									
+									<hr class="major" />
+								  
+									<h2>3. Calculating Steps</h2>
 		
 									<p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">
-									1. Calculate total visit, pageview, transaction for Jan, Feb and March 2017 (order by month)<br>
-									2. Bounce rate per traffic source in July 2017 (Bounce_rate = num_bounce/total_visit) (order by total_visit DESC)<br>
-								   	3. Revenue by traffic source by week, by month in June 2017<br>
-									4. Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017<br>
-									5. Average number of transactions per user that made a purchase in July 2017<br>
-									6. Average amount of money spent per session. Only include purchaser data in July 2017<br>
-									7. Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered<br>
-									8. Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017. For example, 100% product view then 40% add_to_cart and 10% purchase.<br>
-									Add_to_cart_rate = number product  add to cart/number product view. Purchase_rate = number product purchase/number product view. The output should be calculated in product level.
-									</p>
+									1. Calculate Row_number of each factor Recency, Frequency, Monetary<br>
+                                                                        Note: With the frequency and monetary factor, we should divide by contract_age<br>
+									2. Calculating Recency score, Frequency score and Monetary score by using quartile base on row_number of each factor<br>
+								        3. Synthesizing RFM score using concat() function
+                  							</p>
+									
                 							<!-- <p>Lecture | 1h30 | <a target="_blank" href="Tai_liu_hng_dn_ban_POD_tren_Etsy_chi.pdf">Slides</a></p> -->    
 									<ul class="actions">
-										<li><a href="https://github.com/binhlevan48/DATA_PROJECTS/blob/main/SQL/Bigquery_Project/Bigquery_project.sql" class="button">View Source Code</a></li>
+										<li><a href="https://github.com/binhlevan48/DATA_PROJECTS/blob/main/SQL/CUSTOMER360%20RFM%20ANALYSIS/rfm_analysis_code.sql" class="button">View Source Code</a></li>
 									</ul>
 								</section>
 									
