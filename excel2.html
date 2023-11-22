@@ -6,7 +6,7 @@
 -->
 <html>
     <head>
-        <title>Excel2 - sdfkhwljf</title>
+        <title>EXCEL 2 - HR Attrition Analysis</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -27,7 +27,7 @@
 				
 							<!-- Header -->
 								<header id="header">
-									<a href="sql.html" class="logo">
+									<a href="excel.html" class="logo">
 										<strong>Excel Projects</strong>
 										<img src="images/back_to_homepage_icon.gif" alt="Icon" style="vertical-align: middle;">
 									</a>
@@ -49,51 +49,97 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Exploring Google Analytics Dataset</h1>
+										<h1>HR Attrition Analysis</h1>
 									</header>
 				
-									<!-- <span class="image main"><img src="images/plato-pizza-dashboard.png" alt="" /></span> -->
+									<span class="image main"><img src="images/excel-hr-analysis-main.png" alt="" /></span>
 				
-									<h2>1. Dataset Summary</h2>
-							                <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">For each Analytics view that is enabled for BigQuery integration, a dataset is added using the view ID as the name.<br>
-							                More information, please visit link: <a href="https://support.google.com/analytics/answer/3437719?hl=en">here</a>
-							                </p>
+									<h2>1. Design Thinking</h2>
+								        <p style="font-size: 1.3em; text-align: justify; margin-left: 20px; margin-right: 20px;">Step 1: Empahthize</p>
+									<p style="font-size: 1.1em; text-align: justify; margin-left: 20px; margin-right: 20px;">
+									1. Understand problem & Observe<br><br>
+									What problem is the stakeholder trying to address? What difficulties are they facing?<br>
+									- The stakeholder is trying to address attrition within the organization.<br>
+									- Difficulties in understanding the factors contributing to attrition, identifying key patterns or trends, and identifying potential areas for intervention or improvement.<br><br>
+									Why is it necessary to build this dashboard? What is the goal of this dashboard?<br>
+									- Provide a comprehensive view of the employee attrition situation, identify underlying factors, and enable data-driven decision-making<br><br>
+									What is the goal of this dashboard?<br>
 									
-									<hr class="major" />
+									- Insights into attrition patterns, understand the impact of various factors, and aid in the development of strategies to reduce attrition rates.<br><br>
 									
-							                <h2>2. Objective</h2>
-							                <p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness. The objective of exploring the Google Analytics sample dataset is to gain insights into website performance, user behavior, and marketing effectiveness. By analyzing the dataset, we aim to understand key metrics, identify trends, and make data-driven recommendations for improving website performance and optimizing digital marketing strategies.</p>
+									Who are the users of this report?<br>
+									- HR managers, department heads, and organizational leaders who are responsible for managing employee retention and making informed decisions to address attrition.<br><br>
 
-									  <!-- 
-								          <ul>
-							                  <li>Total visit, pageview, transaction and revenue per month</li>
-							                  <li>Bounce rate per traffic source</li>
-							                  <li>Average amount of money spent per session</li>
-							                  <li>Average number of product pageviews by purchaser type</li>
-							                  <li>Cohort map from pageview to addtocart to purchase</li>
-							                  </ul>
-							                  </li>
-							                  </ul>
-									  -->
+
+									2. Dataset Review<br><br>
+									Dimensions:<br><br>
+
+									- Attrition<br>
+									- Business Travel<br>
+									- CF_age band<br>
+									- CF_attrition label<br>
+									- Department<br>
+									- Education Field<br>
+									- Gender<br>
+									- Job Role<br>
+									- Marital Status<br>
+									- Over Time<br>
+									- Employee Number<br>
+									- Performance Status<br>
+									- Age Bucket<br>
+									- Job Satisfaction Status<br>
+									- Distance Status<br>
+									- Working Year Group<br><br>
+
+									Measures<br><br>
+
+									- Employee Count<br>
+									- Training Times Last Year<br>
+									- Age<br>
+									- Daily Rate<br>
+									- Distance From Home<br>
+									- Environment Satisfaction<br>
+									- Hourly Rate<br>
+									- Job Involvement<br>
+									- Job Level<br>
+									- Monthly Income<br>
+									- Monthly Rate<br>
+									- Num Companies Worked<br>
+									- Percent Salary Hike<br>
+									- Performance Rating<br>
+									- Relationship Satisfaction<br>
+									- Standard Hours<br>
+									- Stock Option Level<br>
+									- Total Working Years<br>
+									- Work-Life Balance<br>
+									- Years At Company<br>
+									- Years In Current Role<br>
+									- Years Since Last Promotion<br>
+									- Years With Curr Manager<br>
+
+
+								        More about design thinking process, please visit: <a href="https://github.com/binhlevan48/DATA_PROJECTS/tree/main/EXCEL/HR%20ANALYSIS" target="_blank">Link</a>
+								        </p>
 									
 									<hr class="major" />
-								
-									<h2>3. List of Queries</h2>
+									
+								        <h2>2. Analysis & Dashboard</h2>
+								        <p style="font-size: 1.1em; text-align: justify; margin-left: 20px; margin-right: 20px;">The analysis results and dashboard are presented in the Analysis and Dashboard tabs in the HR_ANALYSIS_PROJECT file.</p>
+									
+									<hr class="major" />
+								  
+									<!-- <h2>3. Calculating Steps</h2>
 		
 									<p style="font-size: 1.2em; text-align: justify; margin-left: 20px; margin-right: 20px;">
-									1. Calculate total visit, pageview, transaction for Jan, Feb and March 2017 (order by month)<br>
-									2. Bounce rate per traffic source in July 2017 (Bounce_rate = num_bounce/total_visit) (order by total_visit DESC)<br>
-								   	3. Revenue by traffic source by week, by month in June 2017<br>
-									4. Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017<br>
-									5. Average number of transactions per user that made a purchase in July 2017<br>
-									6. Average amount of money spent per session. Only include purchaser data in July 2017<br>
-									7. Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered<br>
-									8. Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017. For example, 100% product view then 40% add_to_cart and 10% purchase.<br>
-									Add_to_cart_rate = number product  add to cart/number product view. Purchase_rate = number product purchase/number product view. The output should be calculated in product level.
-									</p>
+									1. Calculate Row_number of each factor Recency, Frequency, Monetary<br>
+                                                                        Note: With the frequency and monetary factor, we should divide by contract_age<br>
+									2. Calculating Recency score, Frequency score and Monetary score by using quartile base on row_number of each factor<br>
+								        3. Synthesizing RFM score using concat() function
+                  							</p>
+									-->
                 							<!-- <p>Lecture | 1h30 | <a target="_blank" href="Tai_liu_hng_dn_ban_POD_tren_Etsy_chi.pdf">Slides</a></p> -->    
 									<ul class="actions">
-										<li><a href="https://github.com/binhlevan48/DATA_PROJECTS/blob/main/SQL/Bigquery_Project/Bigquery_project.sql" class="button">View Source Code</a></li>
+										<li><a href="https://github.com/binhlevan48/DATA_PROJECTS/tree/main/EXCEL/HR%20ANALYSIS" class="button" target="_blank">View Project Files</a></li>
 									</ul>
 								</section>
 									
